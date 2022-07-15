@@ -6,9 +6,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SIGN-UP-FORM</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>SIGN-UP-FORM</h1>
+  <div class="container">
+    <header class="header">
+      <img src="" alt="">
+      <h1>ACAR</h1>
+    </header>
+
+    <div class="form-container">
+      <div class="info">
+        <p>This is not a real online service! You know you need something
+          like this in your life to help you realize your deepest dreams. 
+          Sign up <span style="font-style:italic;">now</span> to get started
+        </p>
+        <p>You <span style="font-style:italic;">know</span> you want to.</p>
+      </div>
+
+      <form action="" class="createacct">
+        <p id="form-header">Let's do this</p>
+        <div>
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" id="fname" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="lname">Last Name</label>
+          <input type="text" name="lname" id="lname" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="example@example.com">
+          <span></span>
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="000-000-000" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="psw">Password</label>
+          <input type="password" name="psw" id="psw" required>
+          <span class ='pswSpan'></span>
+        </div>
+        <div>
+          <label for="Cpsw">Confirm Password</label>
+          <input type="password" name="Cpsw" id="Cpsw" required>
+          <span class ='pswSpan'></span>
+        </div>
+        <div class ='btn-div'>
+          <button type="submit">Create Account</button>
+          <p>Already have an account?<span id="loginText"><a href=""> Log in</a></span></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>
